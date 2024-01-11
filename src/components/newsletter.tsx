@@ -1,6 +1,6 @@
-import Ws from "../public/images/Whatsapp_37229.png"
-import Fb from '../public/images/Facebook_icon-icons.com_66805.png'
-import Ig from '../public/images/iconfinder-social-media-applications-3instagram-4102579_113804.png'
+import Ws from "../public/images/Whatsapp_37229.webp"
+import Fb from '../public/images/Facebook_icon-icons.com_66805.webp'
+import Ig from '../public/images/iconfinder-social-media-applications-3instagram-4102579_113804.webp'
 
 export default function Newsletter() {
   return (
