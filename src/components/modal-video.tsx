@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useRef, Fragment } from 'react'
+
 import { Dialog, Transition } from '@headlessui/react'
-import Computer from '../public/images/experiencia-programacion-persona-que-trabaja-codigos-computadora.jpg'
+import Computer from '../public/images/experiencia-programacion-persona-que-trabaja-codigos-computadora_2_11zon.webp'
 
 interface ModalVideoProps {
+  // thumb: string
   thumbWidth: number
   thumbHeight: number
   thumbAlt: string
@@ -26,9 +29,10 @@ export default function ModalVideo({
 
       {/* Video thumbnail */}
       <div>
-        <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="100">
+        <div className="relative flex justify-center mb-8" data-aos="zoom-y-out">
           <div className="flex flex-col justify-center">
             <img src={Computer} width={thumbWidth} height={thumbHeight} className='rounded-md'/>
+            {/* <LazyImage src={Computer} alt='Primer imagen' width={768} height={432}/> */}
 
           </div>
           <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-fuchsia-700 rounded-full font-medium group p-4 shadow-lg" onClick={() => { setModalOpen(true) }}>

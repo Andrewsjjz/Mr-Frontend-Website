@@ -1,4 +1,4 @@
-import VideoThumb from "../public/images/hero-image.png";
+// import VideoThumb from "../public/images/hero-image.png";
 import ModalVideo from "../components/modal-video";
 
 import Aos from "aos";
@@ -7,6 +7,7 @@ import { useEffect } from "react";
 
 export default function Hero() {
 
+  
   useEffect(() => {
     Aos.init({
       once: true,
@@ -76,7 +77,7 @@ export default function Hero() {
 
           {/* Hero image */}
           <ModalVideo
-            thumb={VideoThumb}
+            // thumb={VideoThumb}
             thumbWidth={768}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail"

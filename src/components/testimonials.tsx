@@ -1,8 +1,8 @@
 // import TestimonialImage from "@/public/images/testimonial.jpg"
-import Computer from "../public/images/Developer activity-bro.svg"
-import HandCoding from "../public/images/Hand coding-bro.svg"
-import SEO from '../public/images/Analysis-amico.svg'
-import Clients from '../public/images/Generating new leads-pana.svg'
+import Computer from "../public/images/Developer-activity-bro.webp"
+import HandCoding from "../public/images/Hand-coding-bro.webp"
+import SEO from '../public/images/Analysis-amico.webp'
+import Clients from '../public/images/Generating-new-leads-pana.webp'
 
 import Aos from "aos";
 import 'aos/dist/aos.css'
