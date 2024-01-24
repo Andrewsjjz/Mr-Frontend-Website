@@ -1,6 +1,6 @@
-import Ws from "../public/images/Whatsapp_37229.webp"
-import Fb from '../public/images/Facebook_icon-icons.com_66805.webp'
-import Ig from '../public/images/iconfinder-social-media-applications-3instagram-4102579_113804.webp'
+import Ws from "../public/images/Whatsapp_37229.webp";
+import Fb from "../public/images/Facebook_icon-icons.com_66805.webp";
+import Ig from "../public/images/iconfinder-social-media-applications-3instagram-4102579_113804.webp";
 
 export default function Newsletter() {
   return (
@@ -106,14 +106,32 @@ export default function Newsletter() {
 
                 {/* CTA form */}
                 <div className="flex items-center justify-between sm:justify-start sm:gap-10 md:gap-5">
-                  <a href="#">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://api.whatsapp.com/send?phone=573002622078&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20sus%20servicios%20de%20desarrollo%20web"
+                  >
                     <img src={Ws} width={50} height={50} alt="Whatsapp" />
                   </a>
-                  <a href="">
-                  <img src={Fb} width={50} height={50} alt="Facebook" style={{backgroundColor: 'white'}}/>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61555523351384"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={Fb}
+                      width={50}
+                      height={50}
+                      alt="Facebook"
+                      style={{ backgroundColor: "white" }}
+                    />
                   </a>
-                  <a href="">
-                  <img src={Ig} width={50} height={50} alt="Instagram" />
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/mr_frontend_?igsh=azlxeDBvaDc0MDYy"
+                  >
+                    <img src={Ig} width={50} height={50} alt="Instagram" />
                   </a>
                 </div>
               </div>
