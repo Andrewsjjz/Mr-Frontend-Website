@@ -74,6 +74,8 @@ export default function Hero() {
               </p>
             </div>
           </div>
+          <div>
+          </div>
 
           {/* Hero image */}
           <ModalVideo
