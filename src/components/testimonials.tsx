@@ -1,14 +1,13 @@
 // import TestimonialImage from "@/public/images/testimonial.jpg"
-import Computer from "../public/images/Developer-activity-bro.webp"
-import HandCoding from "../public/images/Hand-coding-bro.webp"
+import Computer from '../public/images/Developer-activity-bro.webp'
+import HandCoding from '../public/images/Hand-coding-bro.webp'
 import SEO from '../public/images/Analysis-amico.webp'
 import Clients from '../public/images/Generating-new-leads-pana.webp'
 
-import Aos from "aos";
+import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { useEffect } from "react";
-
+import { useEffect } from 'react'
 
 export default function Testimonials() {
   useEffect(() => {
@@ -60,8 +59,10 @@ export default function Testimonials() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent 
-            bg-gradient-to-r from-fuchsia-600 to-teal-400">
+            <h2
+              className="text-4xl font-bold mb-4 bg-clip-text text-transparent 
+            bg-gradient-to-r from-fuchsia-600 to-teal-400"
+            >
               Crea tu futuro digital con nosotros
             </h2>
             <p className="text-xl text-gray-600 " data-aos="zoom-y-out">
@@ -92,12 +93,11 @@ export default function Testimonials() {
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <img src={Clients} width={300} height={300} alt="Hand" />
             </div>
-
           </div>
 
           {/* Testimonials */}
         </div>
       </div>
     </section>
-  );
+  )
 }

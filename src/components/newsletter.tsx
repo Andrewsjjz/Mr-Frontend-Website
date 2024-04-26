@@ -1,11 +1,11 @@
-import Ws from "../public/images/Whatsapp_37229.webp";
-import Fb from "../public/images/Facebook_icon-icons.com_66805.webp";
-import Ig from "../public/images/iconfinder-social-media-applications-3instagram-4102579_113804.webp";
+import Ws from '../public/images/Whatsapp_37229.webp'
+import Lk from '../public/images/linkedin.png'
+import Gm from '../public/images/gmail.jpg'
 
 export default function Newsletter() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-16">
         <div className="pb-12 md:pb-20">
           {/* CTA box */}
           <div
@@ -99,9 +99,9 @@ export default function Newsletter() {
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">¿Deseas más información?</h3>
+                <h3 className="h3 text-white mb-2">¿Deseas contactarme?</h3>
                 <p className="text-fuchsia-50 text-lg mb-6">
-                  Contactanos y siguenos.
+                  Aquí mis redes sociales
                 </p>
 
                 {/* CTA form */}
@@ -114,25 +114,35 @@ export default function Newsletter() {
                     <img src={Ws} width={50} height={50} alt="Whatsapp" />
                   </a>
                   <a
-                    href="https://www.facebook.com/profile.php?id=61555523351384"
+                    href="https://www.linkedin.com/in/andres-jimenez-89b504265/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
-                      src={Fb}
+                      src={Lk}
                       width={50}
                       height={50}
                       alt="Facebook"
-                      style={{ backgroundColor: "white" }}
+                      className="bg-white rounded-full"
                     />
                   </a>
-                  <a
+                  <img
+                    src={Gm}
+                    width={50}
+                    height={50}
+                    alt="Facebook"
+                    className="bg-white rounded-full"
+                  />
+                  <p className="text-xl font-semibold text-white">
+                    Andresjimenez884@gmail.com
+                  </p>
+                  {/* <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.instagram.com/mr_frontend_?igsh=azlxeDBvaDc0MDYy"
                   >
                     <img src={Ig} width={50} height={50} alt="Instagram" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -140,5 +150,5 @@ export default function Newsletter() {
         </div>
       </div>
     </section>
-  );
+  )
 }
