@@ -26,26 +26,38 @@ export default function ModalVideo({
 
   return (
     <div>
-
       {/* Video thumbnail */}
       <div>
-        <div className="relative flex justify-center mb-8" data-aos="zoom-y-out">
+        <div className="relative flex justify-center mb-8">
           <div className="flex flex-col justify-center">
-            <img src={Computer} width={thumbWidth} height={thumbHeight} className='rounded-md'/>
+            <img
+              src={Computer}
+              width={thumbWidth}
+              height={thumbHeight}
+              className="rounded-md"
+            />
             {/* <LazyImage src={Computer} alt='Primer imagen' width={768} height={432}/> */}
-
           </div>
-          <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-fuchsia-700 rounded-full font-medium group p-4 shadow-lg" onClick={() => { setModalOpen(true) }}>
-
-            <span className="ml-3 text-white font-bold">Haz click para ver el video</span>
+          <button
+            className="absolute top-full flex items-center transform -translate-y-1/2 bg-fuchsia-700 rounded-full font-medium group p-4 shadow-lg"
+            onClick={() => {
+              setModalOpen(true)
+            }}
+          >
+            <span className="ml-3 text-white font-bold">
+              Haz click para ver el video
+            </span>
           </button>
         </div>
       </div>
       {/* End: Video thumbnail */}
 
-      <Transition show={modalOpen} as={Fragment} afterEnter={() => videoRef.current?.play()}>
+      <Transition
+        show={modalOpen}
+        as={Fragment}
+        afterEnter={() => videoRef.current?.play()}
+      >
         <Dialog initialFocus={videoRef} onClose={() => setModalOpen(false)}>
-
           {/* Modal backdrop */}
           <Transition.Child
             className="fixed inset-0 z-[99999] bg-black bg-opacity-75 transition-opacity"
@@ -71,7 +83,13 @@ export default function ModalVideo({
           >
             <div className="max-w-6xl mx-auto h-full flex items-center">
               <Dialog.Panel className="w-full max-h-full aspect-video bg-black overflow-hidden">
-                <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
+                <video
+                  ref={videoRef}
+                  width={videoWidth}
+                  height={videoHeight}
+                  loop
+                  controls
+                >
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -79,11 +97,10 @@ export default function ModalVideo({
             </div>
           </Transition.Child>
           {/* End: Modal dialog */}
-
         </Dialog>
       </Transition>
 
-{/* <iframe 
+      {/* <iframe 
         width="560" 
         height="315" 
         src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
@@ -91,7 +108,6 @@ export default function ModalVideo({
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowFullScreen>
       </iframe> */}
-
     </div>
   )
 }
