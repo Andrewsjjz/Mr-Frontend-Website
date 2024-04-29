@@ -8,28 +8,16 @@ import Services from './pages/services'
 
 import Layout from './layouts/layout'
 
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 
-import { Data } from './interfaces/types'
-import Spinner from './components/spinner'
+// import Spinner from './components/spinner'
 
 function App() {
-  const [loading, setLoading] = useState(true)
-  const [data, setData] = useState<Data | null>(null)
+  // const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    fetch('src/content/content.json')
-      .then((response) => response.json() as unknown as Data)
-      .then((data) => {
-        setData(data)
-        setTimeout(() => setLoading(false), 1800)
-      })
-      .catch((error) => console.error(error))
-  }, [])
-
-  if (loading) {
-    return <Spinner /> // Renderizar el spinner si los datos se están cargando
-  }
+  // if (loading) {
+  //   return <div>Cargando...</div>
+  // }
 
   return (
     <BrowserRouter>

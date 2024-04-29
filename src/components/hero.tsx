@@ -4,12 +4,10 @@ import ModalVideo from '../components/modal-video'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect, useState } from 'react'
-import { Data, HomeProps } from '../interfaces/types'
+import { useEffect } from 'react'
+import { Home } from '../content/content.json'
 
 export default function Hero() {
-  const [data, setData] = useState<Data | null>(null)
-
   useEffect(() => {
     Aos.init({
       once: true,
@@ -17,19 +15,6 @@ export default function Hero() {
       easing: 'ease-out-cubic',
     })
   })
-
-  useEffect(() => {
-    fetch('src/content/content.json')
-      .then((response) => response.json() as unknown as Data)
-      .then((data) => setData(data))
-      .catch((error) => console.error(error))
-  }, [])
-
-  if (!data || !data.Home) {
-    return
-  }
-
-  const homeData: HomeProps = data.Home
 
   return (
     <section className="relative bg-white">
@@ -40,7 +25,7 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              {homeData.titleH1}
+              {Home.titleH1}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 to-teal-400">
                 <br></br>Realidad Web
               </span>
@@ -51,7 +36,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                {homeData.bio}
+                {Home.bio}
               </p>
             </div>
             <a

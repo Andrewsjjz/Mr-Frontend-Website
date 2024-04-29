@@ -5,6 +5,11 @@ export interface CardProps {
     link: string
 }
 
+export interface AccordionProps {
+    title: string
+    children: JSX.Element
+}
+
 export interface HomeProps {
     titleH1: string
     bio: string

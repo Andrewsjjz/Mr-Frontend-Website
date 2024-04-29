@@ -1,123 +1,120 @@
 {
   "Project": {
-    "Desarrollo FullStack": {
-      "projects": [
-        {
-          "title": "Administrador de Clientes",
-          "content": "Proyecto desarrollado con los lenguajes y frameworks de HTML, CSS, React y Vite, utilizando los métodos de useState y useEffect. Con funciones CRUD.",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057687/Captura_de_pantalla_2024-04-23_161140_rzyfc7.png",
-          "link": "https://registo-clientes-react.netlify.app/"
-        },
-        {
-          "title": "Planificador de Gastos",
-          "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React y Vite, utilizando los metodos de UseState, UseEffect, LocalStorage y Modal. Con funciones CRUD",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057688/Captura_de_pantalla_2024-04-23_161215_sgjgde.png",
-          "link": "https://gastocontrolreact.netlify.app/"
-        },
-        {
-          "title": "Cotizador de seguro para vehiculos",
-          "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React y Vite, utilizando los metodos de UseState, UseEffect, UseCallBack, LocalStorage y Context API.",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057689/Captura_de_pantalla_2024-04-23_161230_oomsbf.png",
-          "link": "https://cotizadorvehiculos-react.netlify.app/"
-        },
-        {
-          "title": "Consultar clima",
-          "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React y Vite, utilizando los metodos de UseState, UseEffect, UseContext, Provider y la API de OpenWeatherMap. Donde se consulta el pais y la localidad que estan registrados en las opciones",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057691/Captura_de_pantalla_2024-04-23_161252_qzrpgc.png",
-          "link": "https://climaapireact.netlify.app/"
-        },
-        {
-          "title": "Buscador de Bebidas",
-          "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React, Vite y BootStrap, utilizando los metodos de UseState, UseEffect, Modal y la API de TheCockTaildb",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057692/Captura_de_pantalla_2024-04-23_161322_km4ihc.png",
-          "link": "https://buscador-bebidas-react-bootstrap.netlify.app/"
-        },
-        {
-          "title": "Atenas Gym Club",
-          "content": "Proyecto desarrollado utilizando tecnologías HTML, CSS, React, Tailwind y Next.js 12, aprovechando toda la potencia de Next.js 12, creando nuestra propia API con Strapi y utilizando base de datos PostgreSQL.",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057694/Captura_de_pantalla_2024-04-23_161337_juiaj3.png",
-          "link": "https://atenas-gym-club.netlify.app/"
-        },
-        {
-          "title": "My Way Restaurant",
-          "content": "Proyecto desarrollado con los lenguajes de React, Tailwind y Next.js 12, utilizando base de datos en la nube que es AWS y MySql y un ORM que seria Prisma. Cuenta con lado cliente donde se realizan los pedidos y un panel de admin donde seria el lado de cocina para confirmar pedidos. Se puede consultar colocando en la barra de direccion /admin",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057695/Captura_de_pantalla_2024-04-25_100449_qhgqt1.png",
-          "link": "https://restaurante-next.vercel.app/"
-        },
-        {
-          "title": "UpTask",
-          "content": "Proyecto de tipo MERN, es una aplicación donde su funcion es la gestion de proyectos permitiendo realizar las funciones CRUD así como añadir colaboradores, contando con una seccion que permite el registro de otras personas. Utilizando como base de datos MongoDB, para el backend Node JS y Express JS. Como frontend React y Tailwind. Además de implementar Socket io y Sendgrid",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057696/Captura_de_pantalla_2024-04-25_100522_ojohur.png",
-          "link": "https://restaurante-next.vercel.app/"
-        }
-      ]
-    },
-    "Machine Learning": {
-      "projects": [
-        {
-          "title": "Filtro de deteccion de correo spam",
-          "content": "Este proyecto es un sofisticado filtro de spam desarrollado utilizando Python, Scikit-learn y NLTK. El objetivo principal del proyecto es clasificar los mensajes de correo electrónico como 'spam' o 'no spam' con alta precisión.",
-          "link": "this2"
-        },
-        {
-          "title": "Prediccion de un coste de un incidente de seguridad",
-          "content": "Este proyecto es un modelo de Machine Learning desarrollado con Python, Pandas, Numpy, Matplotlib y Scikit-learn. El objetivo principal del proyecto es predecir el coste asociado a un incidente de seguridad.",
-          "link": "this2"
-        },
-        {
-          "title": "Deteccion de URL maliciosas",
-          "content": "Este proyecto es un sistema de detección de URL maliciosas desarrollado con Python, Pandas, Numpy, Matplotlib y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las URL como 'maliciosas' o 'no maliciosas' para mejorar la seguridad en la web.",
-          "link": "this2"
-        },
-        {
-          "title": "Deteccion de malware en Android (Arboles de Decisiones)",
-          "content": "Este proyecto es un sistema de detección de malware en Android desarrollado con Python, Pandas, Numpy, Matplotlib, Graphviz y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las aplicaciones de Android como 'maliciosas' o 'no maliciosas' para mejorar la seguridad en los dispositivos Android",
-          "link": "this2"
-        },
-        {
-          "title": "Deteccion de transacciones bancarias fraudulentas (DBSCAN)",
-          "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia DBSCAN con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
-          "link": "this2"
-        },
-        {
-          "title": "Deteccion de transacciones bancarias fraudulentas (Distribución Gaussiana)",
-          "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia Distribución Gaussiana con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
-          "link": "this2"
-        },
-        {
-          "title": "Deteccion de transacciones bancarias fraudulentas (Isolation Forest)",
-          "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia Isolation Forest con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
-          "link": "this2"
-        },
-        {
-          "title": "Deteccion de transacciones bancarias fraudulentas (Redes Neuronales Artificiales)",
-          "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia RNA con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
-          "link": "this2"
-        }
-      ]
-    },
-    "Diseño UX/UI": {
-      "projects": [
-        {
-          "title": "Al Arco",
-          "content": "Diseño de un dashboard para proporcionar información detallada de los últimos partidos de futbol. Creado con la herramienta de Figma",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714062211/Wireframe_-_1_fpnotu.png",
-          "link": "https://www.behance.net/gallery/180390379/Al-Arco"
-        },
-        {
-          "title": "Atenas Gym Club",
-          "content": "Diseño de aplicación movil para la información general de un gimnasio. Creado con la herramienta de Figma",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714062380/253shots_so_1_qb16qg.png",
-          "link": "https://www.behance.net/gallery/180391275/Atenas-Gym-Club"
-        },
-        {
-          "title": "Trade Bank",
-          "content": "Diseño de una plataforma bancaria de trading para mejorar la experiencia de usuario, con interfaz para telefono y pc. Creado con la herramienta de Figma",
-          "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714065400/Slide_4_3_-_1_g34clf.png",
-          "link": "https://www.behance.net/gallery/181376653/Trade-Bank"
-        }
-      ]
-    }
+    "titleH1": "Desarrollador Fullstack",
+    "projects": [
+      {
+        "title": "Administrador de Clientes",
+        "content": "Proyecto desarrollado con los lenguajes y frameworks de HTML, CSS, React y Vite, utilizando los métodos de useState y useEffect. Con funciones CRUD.",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057687/Captura_de_pantalla_2024-04-23_161140_rzyfc7.png",
+        "link": "https://registo-clientes-react.netlify.app/"
+      },
+      {
+        "title": "Planificador de Gastos",
+        "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React y Vite, utilizando los metodos de UseState, UseEffect, LocalStorage y Modal. Con funciones CRUD",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057688/Captura_de_pantalla_2024-04-23_161215_sgjgde.png",
+        "link": "https://gastocontrolreact.netlify.app/"
+      },
+      {
+        "title": "Cotizador de seguro para vehiculos",
+        "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React y Vite, utilizando los metodos de UseState, UseEffect, UseCallBack, LocalStorage y Context API.",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057689/Captura_de_pantalla_2024-04-23_161230_oomsbf.png",
+        "link": "https://cotizadorvehiculos-react.netlify.app/"
+      },
+      {
+        "title": "Consultar clima",
+        "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React y Vite, utilizando los metodos de UseState, UseEffect, UseContext, Provider y la API de OpenWeatherMap. Donde se consulta el pais y la localidad que estan registrados en las opciones",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057691/Captura_de_pantalla_2024-04-23_161252_qzrpgc.png",
+        "link": "https://climaapireact.netlify.app/"
+      },
+      {
+        "title": "Buscador de Bebidas",
+        "content": "Proyecto desarrollado con las tecnologias de HTML, CSS, React, Vite y BootStrap, utilizando los metodos de UseState, UseEffect, Modal y la API de TheCockTaildb",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057692/Captura_de_pantalla_2024-04-23_161322_km4ihc.png",
+        "link": "https://buscador-bebidas-react-bootstrap.netlify.app/"
+      },
+      {
+        "title": "Atenas Gym Club",
+        "content": "Proyecto desarrollado utilizando tecnologías HTML, CSS, React, Tailwind y Next.js 12, aprovechando toda la potencia de Next.js 12, creando nuestra propia API con Strapi y utilizando base de datos PostgreSQL.",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057694/Captura_de_pantalla_2024-04-23_161337_juiaj3.png",
+        "link": "https://atenas-gym-club.netlify.app/"
+      },
+      {
+        "title": "My Way Restaurant",
+        "content": "Proyecto desarrollado con los lenguajes de React, Tailwind y Next.js 12, utilizando base de datos en la nube que es AWS y MySql y un ORM que seria Prisma. Cuenta con lado cliente donde se realizan los pedidos y un panel de admin donde seria el lado de cocina para confirmar pedidos. Se puede consultar colocando en la barra de direccion /admin",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057695/Captura_de_pantalla_2024-04-25_100449_qhgqt1.png",
+        "link": "https://restaurante-next.vercel.app/"
+      },
+      {
+        "title": "UpTask",
+        "content": "Proyecto de tipo MERN, es una aplicación donde su funcion es la gestion de proyectos permitiendo realizar las funciones CRUD así como añadir colaboradores, contando con una seccion que permite el registro de otras personas. Utilizando como base de datos MongoDB, para el backend Node JS y Express JS. Como frontend React y Tailwind. Además de implementar Socket io y Sendgrid",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714057696/Captura_de_pantalla_2024-04-25_100522_ojohur.png",
+        "link": "https://restaurante-next.vercel.app/"
+      }
+    ],
+    "titleH2": "Machine Learning",
+    "project": [
+      {
+        "title": "Filtro de deteccion de correo spam",
+        "content": "Este proyecto es un sofisticado filtro de spam desarrollado utilizando Python, Scikit-learn y NLTK. El objetivo principal del proyecto es clasificar los mensajes de correo electrónico como 'spam' o 'no spam' con alta precisión.",
+        "link": "this2"
+      },
+      {
+        "title": "Prediccion de un coste de un incidente de seguridad",
+        "content": "Este proyecto es un modelo de Machine Learning desarrollado con Python, Pandas, Numpy, Matplotlib y Scikit-learn. El objetivo principal del proyecto es predecir el coste asociado a un incidente de seguridad.",
+        "link": "this2"
+      },
+      {
+        "title": "Deteccion de URL maliciosas",
+        "content": "Este proyecto es un sistema de detección de URL maliciosas desarrollado con Python, Pandas, Numpy, Matplotlib y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las URL como 'maliciosas' o 'no maliciosas' para mejorar la seguridad en la web.",
+        "link": "this2"
+      },
+      {
+        "title": "Deteccion de malware en Android (Arboles de Decisiones)",
+        "content": "Este proyecto es un sistema de detección de malware en Android desarrollado con Python, Pandas, Numpy, Matplotlib, Graphviz y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las aplicaciones de Android como 'maliciosas' o 'no maliciosas' para mejorar la seguridad en los dispositivos Android",
+        "link": "this2"
+      },
+      {
+        "title": "Deteccion de transacciones bancarias fraudulentas (DBSCAN)",
+        "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia DBSCAN con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
+        "link": "this2"
+      },
+      {
+        "title": "Deteccion de transacciones bancarias fraudulentas (Distribución Gaussiana)",
+        "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia Distribución Gaussiana con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
+        "link": "this2"
+      },
+      {
+        "title": "Deteccion de transacciones bancarias fraudulentas (Isolation Forest)",
+        "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia Isolation Forest con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
+        "link": "this2"
+      },
+      {
+        "title": "Deteccion de transacciones bancarias fraudulentas (Redes Neuronales Artificiales)",
+        "content": "Este proyecto es un sistema de detección de transacciones bancarias fraudulentas desarrollado basado en la metodologia RNA con Python, Pandas, Numpy, Matplotlib, Seaborn y Scikit-learn. El objetivo principal del proyecto es identificar y clasificar las transacciones bancarias como 'fraudulentas' o 'no fraudulentas' para mejorar la seguridad en las transacciones bancarias.",
+        "link": "this2"
+      }
+    ],
+    "titleH3": "Diseño UX/UI",
+    "projec": [
+      {
+        "title": "Al Arco",
+        "content": "Diseño de un dashboard para proporcionar información detallada de los últimos partidos de futbol. Creado con la herramienta de Figma",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714062211/Wireframe_-_1_fpnotu.png",
+        "link": "https://www.behance.net/gallery/180390379/Al-Arco"
+      },
+      {
+        "title": "Atenas Gym Club",
+        "content": "Diseño de aplicación movil para la información general de un gimnasio. Creado con la herramienta de Figma",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714062380/253shots_so_1_qb16qg.png",
+        "link": "https://www.behance.net/gallery/180391275/Atenas-Gym-Club"
+      },
+      {
+        "title": "Trade Bank",
+        "content": "Diseño de una plataforma bancaria de trading para mejorar la experiencia de usuario, con interfaz para telefono y pc. Creado con la herramienta de Figma",
+        "image": "https://res.cloudinary.com/dq5hkeiwx/image/upload/v1714065400/Slide_4_3_-_1_g34clf.png",
+        "link": "https://www.behance.net/gallery/181376653/Trade-Bank"
+      }
+    ]
   },
   "Home": {
     "titleH1": "Transformamos ideas en",

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from './logo'
-import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { SlSocialLinkedin } from 'react-icons/sl'
 
 const Footer = () => {
