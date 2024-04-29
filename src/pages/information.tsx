@@ -1,18 +1,9 @@
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect, useState } from 'react'
-import { Data, SkillsProps } from '../interfaces/types'
+import { useEffect } from 'react'
+import { Skills } from '../content/content.json'
 
 export default function Information() {
-  const [data, setData] = useState<Data | null>(null)
-
-  useEffect(() => {
-    fetch('src/content/content.json')
-      .then((response) => response.json() as unknown as Data)
-      .then((data) => setData(data))
-      .catch((error) => console.error(error))
-  }, [])
-
   useEffect(() => {
     Aos.init({
       once: true,
@@ -20,12 +11,6 @@ export default function Information() {
       easing: 'ease-out-cubic',
     })
   })
-
-  if (!data || !data.Skills) {
-    return
-  }
-
-  const skillsData: SkillsProps = data.Skills
 
   return (
     <section className="relative bg-white">
@@ -41,7 +26,7 @@ export default function Information() {
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 to-teal-400">
                   Arquitecto de Soluciones Tecnológicas:
                 </span>{' '}
-                {skillsData.title}
+                {Skills.title}
               </h2>
               <div className="flex flex-wrap items-center justify-between -mx-4">
                 <div className="w-full px-4 lg:w-6/12">
@@ -91,28 +76,28 @@ export default function Information() {
                       </a>
                     </div>
                     <p className="mb-5 text-base text-justify text-body-color dark:text-dark-6">
-                      {skillsData.bio}
+                      {Skills.bio}
                     </p>
                     <p className="mb-8 text-base text-justify text-body-color dark:text-dark-6">
                       <span className="font-bold">
                         Desarrollador Fullstack{' '}
                       </span>
-                      {skillsData.fullStack}
+                      {Skills.fullStack}
                       <br></br>
                       <br></br>
                       Las tecnologias que manejo son:
                       <ul>
                         <li>
                           <span className="font-bold">Backend: </span>
-                          {skillsData.backend}
+                          {Skills.backend}
                         </li>
                         <li>
                           <span className="font-bold">Frontend: </span>
-                          {skillsData.frontend}
+                          {Skills.frontend}
                         </li>
                         <li>
                           <span className="font-bold">Base de datos: </span>
-                          {skillsData.bbd}
+                          {Skills.bbd}
                         </li>
                       </ul>
                     </p>
@@ -122,26 +107,26 @@ export default function Information() {
                         {' '}
                         Científico de Datos
                       </span>{' '}
-                      {skillsData.dataScience}{' '}
+                      {Skills.dataScience}{' '}
                       <span className="font-bold"> Machine Learning</span>{' '}
-                      {skillsData.machineLearning}
+                      {Skills.machinelearning}
                     </p>
                     <p className="mb-5 text-base text-justify text-body-color dark:text-dark-6">
                       Ademas de
                       <span className="font-bold"> Diseñador UX/UI</span>{' '}
-                      {skillsData.UXUI}{' '}
+                      {Skills.UXUI}{' '}
                     </p>
                     <p className="mb-5 text-base text-justify text-body-color dark:text-dark-6">
-                      {skillsData.exp1}
+                      {Skills.exp1}
                       <br></br>
                       <br></br>
-                      {skillsData.exp2}
+                      {Skills.exp2}
                       <br></br>
                       <br></br>
-                      {skillsData.exp3}{' '}
+                      {Skills.exp3}{' '}
                     </p>
                     <p className="inline-flex items-center justify-center py-3 text-lg font-bold text-center text-black border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90">
-                      {skillsData.message}
+                      {Skills.message}
                     </p>
                   </div>
                 </div>

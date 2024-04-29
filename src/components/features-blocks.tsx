@@ -1,11 +1,9 @@
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect, useState } from 'react'
-import { Data, MisionProps } from '../interfaces/types'
+import { useEffect } from 'react'
+import { FeaturesMision } from '../content/content.json'
 
 export default function FeaturesBlocks() {
-  const [data, setData] = useState<Data | null>(null)
-
   useEffect(() => {
     Aos.init({
       once: true,
@@ -13,19 +11,6 @@ export default function FeaturesBlocks() {
       easing: 'ease-out-cubic',
     })
   })
-
-  useEffect(() => {
-    fetch('src/content/content.json')
-      .then((response) => response.json() as unknown as Data)
-      .then((data) => setData(data))
-      .catch((error) => console.error(error))
-  }, [])
-
-  if (!data || !data.FeaturesMision) {
-    return
-  }
-
-  const misionData: MisionProps = data.FeaturesMision
 
   return (
     <section className="relative bg-white" data-aos="zoom-y-out">
@@ -48,7 +33,7 @@ export default function FeaturesBlocks() {
                 Misión
               </span>
             </h2>
-            <p className="text-xl text-gray-600">{misionData.content}</p>
+            <p className="text-xl text-gray-600">{FeaturesMision.content}</p>
           </div>
 
           {/* Items */}
@@ -90,7 +75,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h3 className="text-xl text-center font-bold leading-snug tracking-tight mb-1">
-                {misionData.feature1}
+                {FeaturesMision.feature1}
               </h3>
               {/* <p className="text-gray-600 text-center">Desde la creacion de interfaces interactivas hasta la construccion de servidores robustos.</p> */}
             </div>
@@ -129,7 +114,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h3 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {misionData.feature2}
+                {FeaturesMision.feature2}
               </h3>
               {/* <p className="text-gray-600 text-center">Nos especializamos en el diseño moderno y atractivo, creando interfaces intuitivas y faciles de usar.</p> */}
             </div>
@@ -171,7 +156,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h3 className="text-xl text-center font-bold leading-snug tracking-tight mb-1">
-                {misionData.feature3}
+                {FeaturesMision.feature3}
               </h3>
               {/* <p className="text-gray-600 text-center">Optimizacion de palabras clave, mejora de estructura en el sitio y creacion de contenido relevante.</p> */}
             </div>
@@ -212,7 +197,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h3 className="text-xl font-bold leading-snug text-center tracking-tight mb-1">
-                {misionData.feature4}
+                {FeaturesMision.feature4}
               </h3>
               {/* <p className="text-gray-600 text-center">Creacion de redes sociales como Instagram y Facebook, asi como links hacia Whatsapp.</p> */}
             </div>
@@ -248,7 +233,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h3 className="text-xl text-center font-bold leading-snug tracking-tight mb-1">
-                {misionData.feature5}
+                {FeaturesMision.feature5}
               </h3>
               {/* <p className="text-gray-600 text-center">Aseguramos que tu sitio web se encuentre actualizado, seguro y funcionando sin problemas.</p> */}
             </div>
@@ -280,7 +265,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h3 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {misionData.feature6}
+                {FeaturesMision.feature6}
               </h3>
               {/* <p className="text-gray-600 text-center">Servicio de consultoria para ayudarte a crear un sitio web que se adapte a tus necesidades y objetivos.</p> */}
             </div>

@@ -1,22 +1,11 @@
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Accordion from '../components/accordion'
 import Cards from '../components/cards'
-import { Data, CardProps } from '../interfaces/types'
+import { Project } from '../content/content.json'
 
 export default function Services() {
-  const [data, setData] = useState<Data>({
-    Project: {},
-  })
-
-  useEffect(() => {
-    fetch('src/content/content.json')
-      .then((response) => response.json() as unknown as Data)
-      .then((data) => setData(data))
-      .catch((error) => console.error(error))
-  }, [])
-
   useEffect(() => {
     Aos.init({
       once: true,
@@ -49,23 +38,46 @@ export default function Services() {
         </div>
       </div>
 
-      {Object.keys(data.Project).map((key, index) => (
-        <Accordion key={index} title={key}>
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-0 md:gap-8 justify-center items-center">
-            {data.Project[key].projects.map(
-              (projects: CardProps, i: number) => (
-                <Cards
-                  key={i}
-                  title={projects.title}
-                  content={projects.content}
-                  link={projects.link}
-                  image={projects.image}
-                />
-              )
-            )}
-          </div>
-        </Accordion>
-      ))}
+      <Accordion title={Project.titleH1}>
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-0 md:gap-8 justify-center items-center">
+          {Project.projects.map((project, index) => (
+            <Cards
+              key={index}
+              title={project.title}
+              content={project.content}
+              link={project.link}
+              image={project.image}
+            />
+          ))}
+        </div>
+      </Accordion>
+
+      <Accordion title={Project.titleH2}>
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-0 md:gap-8 justify-center items-center">
+          {Project.project.map((project, index) => (
+            <Cards
+              key={index}
+              title={project.title}
+              content={project.content}
+              link={project.link}
+            />
+          ))}
+        </div>
+      </Accordion>
+
+      <Accordion title={Project.titleH3}>
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-0 md:gap-8 justify-center items-center">
+          {Project.projec.map((projec, index) => (
+            <Cards
+              key={index}
+              title={projec.title}
+              content={projec.content}
+              link={projec.link}
+              image={projec.image}
+            />
+          ))}
+        </div>
+      </Accordion>
     </>
   )
 }

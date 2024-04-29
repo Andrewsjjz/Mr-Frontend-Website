@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react'
+import { AccordionProps } from '../interfaces/types'
 
-const Accordion = ({ title, children }) => {
+const Accordion = ({ title, children }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
